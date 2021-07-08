@@ -22,3 +22,4 @@ import Route from '@ioc:Adonis/Core/Route'
 
 Route.on('/').render('welcome')
 Route.on('/student').render('student/index')
+Route.on('/student/create').render('student/create')
