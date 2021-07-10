@@ -21,6 +21,6 @@
 import Route from '@ioc:Adonis/Core/Route'
 
 Route.on('/').render('welcome')
-Route.on('/student').render('student/index')
+Route.get('/student', 'StudentsController.index')
 Route.on('/student/create').render('student/create')
 Route.post('/student/store', 'StudentsController.store')
